@@ -1,0 +1,95 @@
+.footerWrapper {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 11px;
+  line-height: 1.36364;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  padding-top: 17px;
+}
+
+.footerWrapper a {
+  color: #515154;
+  text-decoration: none;
+}
+
+.footerWrapper a:hover {
+  text-decoration: underline;
+  color: #1d1d1f;
+}
+
+.upperTextContainer {
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 8px;
+  margin-bottom: 17px;
+}
+
+.upperTextContainer p {
+  margin-bottom: 11px;
+}
+
+.footerLinksWrapper h3 {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.footerLinksWrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinksWrapper ul li {
+  line-height: 2;
+}
+
+.myAppleWrapper {
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 8px;
+  margin-top: 15px;
+  margin-bottom: 11px;
+}
+
+.copyrightWrapper {
+  padding: 10px 0 20px 0;
+}
+
+.footerLinksTerms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerLinksTerms ul li {
+  padding-right: 10px;
+  border-right: 1px solid #d2d2d7;
+  margin-right: 10px;
+}
+
+.footerLinksTerms ul li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.flagWrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.flagWrapper img {
+  width: 16px;
+  height: auto;
+}
+
+.footerCountryName {
+  display: inline-block;
+  vertical-align: middle;
+}

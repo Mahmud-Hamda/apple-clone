@@ -1,0 +1,28 @@
+.alertSection {
+  background-color: #f5f5f7;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.alertTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 4px;
+}
+
+.alertText {
+  font-size: 14px;
+  color: #1d1d1f;
+  line-height: 1.4;
+}
+
+.alertText a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.alertText a:hover {
+  text-decoration: underline;
+}
