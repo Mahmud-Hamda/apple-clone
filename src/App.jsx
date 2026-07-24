@@ -2,15 +2,29 @@
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
 // import "./App.css";
-import Alert from "./components/AlertSection/AlertSection.jsx";
-import Header from "./components/Header/Header.jsx";
-import FirstSection from "./components/Sections/FirstSection.jsx";
-import SecondSection from "./components/Sections/SecondSection.jsx";
-import ThirdSection from "./components/Sections/ThirdSection.jsx";
-import FourthSection from ".//components/Sections/FourthSection.jsx";
-import FifthSection from "./components/Sections/FifthSection.jsx";
-import SixthSection from "./components/Sections/SixthSection.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+// import Alert from "./components/AlertSection/AlertSection.jsx";
+// import Header from "./components/Header/Header.jsx";
+import {
+  AlertSection,
+  Footer,
+  Header,
+} from "./components/ComponentsBarrel.jsx";
+
+// import FirstSection from "./components/Sections/FirstSection.jsx";
+// import SecondSection from "./components/Sections/SecondSection.jsx";
+// import ThirdSection from "./components/Sections/ThirdSection.jsx";
+// import FourthSection from ".//components/Sections/FourthSection.jsx";
+// import FifthSection from "./components/Sections/FifthSection.jsx";
+// import SixthSection from "./components/Sections/SixthSection.jsx";
+// import Footer from "./components/Footer/Footer.jsx";
+import {
+  FifthSection,
+  FirstSection,
+  FourthSection,
+  SecondSection,
+  SixthSection,
+  ThirdSection,
+} from "./components/Sections/SectionsBarrel.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,7 +32,7 @@ function App() {
   return (
     <>
       <Header />
-      <Alert />
+      <AlertSection />
       <FirstSection />
       <SecondSection />
       <ThirdSection />

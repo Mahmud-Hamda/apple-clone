@@ -4,7 +4,6 @@ import App from "./App.jsx";
 
 // importing Bootsrap
 import "bootstrap/dist/css/bootstrap.min.css";
-//  import bootstrap from '../src/css/bootstrap.css';
 
 import "./index.css";
 
