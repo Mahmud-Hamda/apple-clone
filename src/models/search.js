@@ -40,7 +40,7 @@ export const searchEntries = [
   },
   {
     title: "Apple TV",
-    detail: "Watch now on the Apple TV App.",
+    detail: "Sample show art on the TV panel.",
     to: "/tv",
     terms: ["tv", "apple tv"],
   },
@@ -52,7 +52,7 @@ export const searchEntries = [
   },
   {
     title: "Support",
-    detail: "Product help and repairs.",
+    detail: "A short sample page.",
     to: "/support",
     terms: ["support", "help", "repair"],
   },

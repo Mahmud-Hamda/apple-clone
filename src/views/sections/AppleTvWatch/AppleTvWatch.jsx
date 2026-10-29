@@ -27,7 +27,7 @@ export default function AppleTvWatch({ panel }) {
                   <img src={bankerLogo} alt="The Banker" />
                 </div>
                 <div className={styles.watchMoreWrapper}>
-                  <a href="#">Watch now on the Apple TV App</a>
+                  <span>Sample show art</span>
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function AppleTvWatch({ panel }) {
                 </div>
                 <CtaLinks
                   className={styles.linksWrapper}
-                  links={[{ label: "Learn more" }, { label: "Buy" }]}
+                  links={[{ label: "See this page", to: "/watch" }]}
                 />
               </div>
             </div>

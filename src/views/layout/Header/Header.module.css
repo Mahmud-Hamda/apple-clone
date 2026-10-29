@@ -15,6 +15,14 @@
   opacity: 1;
 }
 
+.homeMark {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 1;
+}
+
 .navbarToggler {
   color: #fff;
   border: 0;

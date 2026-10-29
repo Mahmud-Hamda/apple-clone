@@ -13,12 +13,9 @@ export default function Iphone11Pro() {
         <div className={styles.descriptionWrapper}>
           Pro cameras. Pro display. Pro performance.
         </div>
-        <div className={styles.priceWrapper}>
-          From $24.95/mo. or $599 with trade‑in.
-        </div>
         <CtaLinks
           className={styles.linksWrapper}
-          links={[{ label: "Learn more" }, { label: "Buy" }]}
+          links={[{ label: "See this page", to: "/iphone" }]}
         />
       </div>
     </section>

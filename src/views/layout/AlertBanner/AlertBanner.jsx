@@ -1,22 +1,18 @@
 import styles from "./AlertBanner.module.css";
 
 /**
- * Store-status notice shown under the header.
+ * States that this page is a class layout, not a store.
  * @returns {import("react").JSX.Element}
  */
 export default function AlertBanner() {
   return (
-    <section className={styles.alertSection} aria-label="Store status">
+    <section className={styles.alertSection} aria-label="About this page">
       <div className="container">
-        <div className={styles.alertTitle}>We’re open for you.</div>
+        <div className={styles.alertTitle}>Student portfolio layout</div>
         <div className={styles.alertText}>
-          Our retail stores are closed, but you can buy our products here online
-          and get fast, free delivery. If you need help finding the right product
-          or have a question on your order, chat online with a Specialist or call
-          1-800-MY-APPLE.
-          <br />
-          For service and support, visit{" "}
-          <a href="https://support.apple.com/">support.apple.com</a>.
+          This is a class project. It is not an Apple website. Nothing here is
+          for sale, and this page does not collect payment, phone numbers, or
+          account details.
         </div>
       </div>
     </section>

@@ -21,12 +21,9 @@ export default function Iphone11Cdc({ panel }) {
               <div className={styles.descriptionWrapper}>
                 Just the right amount of everything.
               </div>
-              <div className={styles.priceWrapper}>
-                From $18.70/mo. or $499 with trade‑in.<sup>1</sup>
-              </div>
               <CtaLinks
                 className={styles.linksWrapper}
-                links={[{ label: "Learn more" }, { label: "Apply now" }]}
+                links={[{ label: "See this page", to: "/iphone" }]}
               />
             </div>
           </div>
@@ -35,12 +32,8 @@ export default function Iphone11Cdc({ panel }) {
             <div className={`${column} ${styles.rightSideWrapper}`}>
               <div className={styles.rightSideContainer}>
                 <div className={`${styles.titleWrapper} ${styles.white}`}>
-                  Get the latest CDC response to COVID-19.
+                  Public-service layout sample.
                 </div>
-                <CtaLinks
-                  className={`${styles.linksWrapper} ${styles.white}`}
-                  links={[{ label: "Watch the PSA" }]}
-                />
               </div>
             </div>
           )}

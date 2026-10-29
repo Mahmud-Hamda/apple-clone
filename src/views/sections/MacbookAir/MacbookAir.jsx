@@ -16,10 +16,9 @@ export default function MacbookAir() {
         <div className={`${styles.descriptionWrapper} ${styles.black}`}>
           Twice the speed. Twice the storage.
         </div>
-        <div className={`${styles.priceWrapper} ${styles.grey}`}>From $999.</div>
         <CtaLinks
           className={styles.linksWrapper}
-          links={[{ label: "Learn more" }, { label: "Buy" }]}
+          links={[{ label: "See this page", to: "/mac" }]}
         />
       </div>
     </section>

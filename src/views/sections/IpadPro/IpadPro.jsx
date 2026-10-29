@@ -15,7 +15,7 @@ export default function IpadPro() {
         </div>
         <CtaLinks
           className={styles.linksWrapper}
-          links={[{ label: "Learn more" }, { label: "Order" }]}
+          links={[{ label: "See this page", to: "/ipad" }]}
         />
         <div className={`${styles.caption} row`}>
           <div className="col-sm-12 col-md-6 text-md-end">

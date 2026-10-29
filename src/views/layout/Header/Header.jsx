@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-import logoSm from "../../../assets/images/icons/logo-sm.png";
 
 /**
  * Fixed site header. Menu and search behavior are owned by HeaderController.
@@ -51,8 +50,8 @@ export default function Header({
           >
             ☰
           </button>
-          <NavLink className="navbar-brand mx-auto" to="/" end onClick={onNavigate}>
-            <img src={logoSm} alt="Apple" />
+          <NavLink className={`navbar-brand mx-auto ${styles.homeMark}`} to="/" end onClick={onNavigate}>
+            Demo
           </NavLink>
 
           <div

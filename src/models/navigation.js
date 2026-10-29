@@ -12,12 +12,12 @@ import cartIcon from "../assets/images/icons/cart-sm.png";
 /** @type {NavItem[]} */
 export const navigationItems = [
   { label: "Mac", to: "/mac", summary: "Mac computers, displays, and accessories." },
-  { label: "iPhone", to: "/iphone", summary: "iPhone models and offers." },
+  { label: "iPhone", to: "/iphone", summary: "iPhone layout sample." },
   { label: "iPad", to: "/ipad", summary: "iPad models and accessories." },
   { label: "Watch", to: "/watch", summary: "Apple Watch bands and models." },
   { label: "TV", to: "/tv", summary: "Apple TV and the TV app." },
   { label: "Music", to: "/music", summary: "Apple Music and audio." },
-  { label: "Support", to: "/support", summary: "Product help and repairs." },
+  { label: "Support", to: "/support", summary: "A short sample page." },
   {
     label: "Search",
     to: "/search",
@@ -27,7 +27,7 @@ export const navigationItems = [
   {
     label: "Cart",
     to: "/cart",
-    summary: "Your bag is empty.",
+    summary: "This demo has no checkout.",
     icon: cartIcon,
   },
 ];
