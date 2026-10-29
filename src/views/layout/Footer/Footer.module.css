@@ -165,7 +165,7 @@
   .footerLinksWrapper {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
   }
 
   .column {
@@ -175,9 +175,15 @@
 
   .summary {
     min-height: 0;
-    margin: 10px 0 6px;
+    margin: 0 0 8px;
+    color: #1d1d1f;
+    font-size: 12px;
     font-weight: 600;
     pointer-events: none;
+  }
+
+  .group + .group .summary {
+    margin-top: 18px;
   }
 
   .chevron {
@@ -186,5 +192,15 @@
 
   .group ul {
     display: block;
+  }
+
+  .footerLinksWrapper ul li {
+    line-height: 1.25;
+    padding: 3px 0;
+  }
+
+  .footerLinksWrapper a {
+    color: #424245;
+    font-size: 12px;
   }
 }

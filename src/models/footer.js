@@ -4,41 +4,48 @@
  * @property {string[]} links
  */
 
-/** @type {LinkGroup[][]} Footer columns, left to right. */
+/** @type {LinkGroup[][]} Footer columns, left to right, as on the wide Apple page. */
 export const footerColumns = [
   [
     {
       title: "Shop and Learn",
       links: [
+        "Store",
         "Mac",
         "iPad",
         "iPhone",
         "Watch",
-        "TV",
-        "Music",
+        "Vision",
         "AirPods",
-        "HomePod",
-        "iPod touch",
+        "Home",
+        "AirTag",
         "Accessories",
         "Gift Cards",
       ],
     },
+    {
+      title: "Apple Wallet",
+      links: ["Wallet", "Apple Card", "Apple Pay", "Apple Cash"],
+    },
   ],
   [
     {
-      title: "Services",
-      links: [
-        "Apple Music",
-        "Apple News+",
-        "Apple TV+",
-        "Apple Arcade",
-        "Apple Card",
-        "iCloud",
-      ],
+      title: "Account",
+      links: ["Manage Your Apple Account", "Apple Store Account", "iCloud.com"],
     },
     {
-      title: "Account",
-      links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+      title: "Entertainment",
+      links: [
+        "Apple One",
+        "Apple TV",
+        "Apple Music",
+        "Apple Arcade",
+        "Apple Fitness+",
+        "Apple News+",
+        "Apple Podcasts",
+        "Apple Books",
+        "App Store",
+      ],
     },
   ],
   [
@@ -48,12 +55,14 @@ export const footerColumns = [
         "Find a Store",
         "Genius Bar",
         "Today at Apple",
+        "Group Reservations",
         "Apple Camp",
-        "Field Trip",
         "Apple Store App",
-        "Refurbished and Clearance",
-        "Financing",
+        "Certified Refurbished",
+        "Apple Upgrade",
         "Apple Trade In",
+        "Financing",
+        "Carrier Deals at Apple",
         "Order Status",
         "Shopping Help",
       ],
@@ -66,38 +75,45 @@ export const footerColumns = [
     },
     {
       title: "For Education",
-      links: ["Apple and Education", "Shop for College"],
+      links: ["Apple and Education", "Shop for K-12", "Shop for College"],
     },
     {
       title: "For Healthcare",
-      links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+      links: ["Apple and Healthcare"],
     },
     {
       title: "For Government",
-      links: ["Apple and Education", "Shop for College"],
+      links: [
+        "Apple and Government",
+        "Shop for Veterans and Military",
+        "Shop for State and Local Employees",
+        "Shop for Federal Employees",
+      ],
     },
   ],
   [
     {
       title: "Apple Values",
       links: [
-        "Find a Store",
-        "Genius Bar",
-        "Today at Apple",
-        "Apple Camp",
-        "Field Trip",
-        "Apple Store App",
+        "Accessibility",
+        "Education",
+        "Environment",
+        "Inclusion and Diversity",
+        "Privacy",
+        "Racial Equity and Justice",
+        "Supply Chain Innovation",
       ],
     },
     {
       title: "About Apple",
       links: [
-        "Find a Store",
-        "Genius Bar",
-        "Today at Apple",
-        "Apple Camp",
-        "Field Trip",
-        "Apple Store App",
+        "Newsroom",
+        "Apple Leadership",
+        "Career Opportunities",
+        "Investors",
+        "Ethics & Compliance",
+        "Events",
+        "Contact Apple",
       ],
     },
   ],

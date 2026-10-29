@@ -1,18 +1,45 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { pathForLabel } from "../../../models/navigation.js";
 import styles from "./Footer.module.css";
 import flag from "../../../assets/images/icons/16.png";
+
+const wideQuery = "(min-width: 834px)";
+
+/** True when the footer should stay in columns instead of collapsed rows. */
+function useWideScreen() {
+  const [wide, setWide] = useState(() => window.matchMedia(wideQuery).matches);
+
+  useEffect(() => {
+    const media = window.matchMedia(wideQuery);
+    const update = () => setWide(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+
+  return wide;
+}
 
 /**
  * One titled list of footer links.
  * @param {object} props
  * @param {string} props.title
  * @param {string[]} props.links
+ * @param {boolean} props.wide Whether the directory stays expanded in columns.
  * @returns {import("react").JSX.Element}
  */
-function LinkGroup({ title, links }) {
+function LinkGroup({ title, links, wide }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <details className={styles.group}>
+    <details
+      className={styles.group}
+      open={wide || open}
+      onToggle={(event) => {
+        if (!wide) setOpen(event.currentTarget.open);
+      }}
+    >
       <summary className={styles.summary}>
         <span>{title}</span>
         <svg className={styles.chevron} viewBox="0 0 12 12" aria-hidden="true">
@@ -48,6 +75,8 @@ function LinkGroup({ title, links }) {
  * @returns {import("react").JSX.Element}
  */
 export default function Footer({ columns, legalLinks }) {
+  const wide = useWideScreen();
+
   return (
     <footer className={styles.footerWrapper}>
       <div className="container">
@@ -106,6 +135,7 @@ export default function Footer({ columns, legalLinks }) {
                   key={group.title}
                   title={group.title}
                   links={group.links}
+                  wide={wide}
                 />
               ))}
             </div>
