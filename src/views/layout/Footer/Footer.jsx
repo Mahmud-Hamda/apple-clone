@@ -95,10 +95,10 @@ export default function Footer({ columns, legalLinks }) {
           </p>
         </div>
 
-        <div className={`${styles.footerLinksWrapper} row`}>
+        <div className={styles.footerLinksWrapper}>
           {columns.map((column) => (
             <div
-              className="col-12 col-md"
+              className={styles.column}
               key={column.map((group) => group.title).join("-")}
             >
               {column.map((group) => (
