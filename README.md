@@ -4,7 +4,7 @@ Responsive React homepage clone of the Apple store. Vite builds a static site th
 
 ## How the page is built
 
-The browser loads `index.html`. `src/main.jsx` mounts React. `App` keeps the header and footer on every page and routes with React Router. `/` is the homepage. Header items open `/mac`, `/iphone`, `/ipad`, `/watch`, `/tv`, `/music`, `/support`, and `/cart`. The search icon expands a field in the header; `/search` is the same search on its own page.
+The browser loads `index.html`. `src/main.jsx` mounts React. `App` keeps the header and footer on every page and routes with React Router. `/` is the homepage. Header items open `/mac`, `/iphone`, `/ipad`, `/watch`, `/tv`, `/music`, `/support`, and `/cart`. The search icon expands a field in the header; `/search` is the same search on its own page. On a narrow screen the footer directories collapse into rows and open one at a time.
 
 ```text
 src/
@@ -32,6 +32,8 @@ Other scripts:
 
 ## GitHub
 
+Repository: [Mahmud-Hamda/apple-clone](https://github.com/Mahmud-Hamda/apple-clone)
+
 Keep secrets out of the repository. `.gitignore` already excludes `.env` files, keys, certificates, credential JSON, `node_modules`, and the Vercel local folder `.vercel`.
 
 ```bash
@@ -45,7 +47,7 @@ git push -u origin main
 1. In Vercel, choose **Add New Project** and import this GitHub repository.
 2. Vercel detects Vite. The build command is `npm run build` and the output directory is `dist` (`vercel.json` records the same settings).
 3. Deploy. Later pushes to the connected branch deploy automatically.
-4. Copy the Vercel domain, such as `apple-clone.vercel.app`.
+4. The live site is [apple-clone-xi-lyart.vercel.app](https://apple-clone-xi-lyart.vercel.app/).
 
 ## Hostinger
 

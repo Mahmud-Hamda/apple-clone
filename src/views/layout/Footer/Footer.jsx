@@ -12,8 +12,20 @@ import flag from "../../../assets/images/icons/16.png";
  */
 function LinkGroup({ title, links }) {
   return (
-    <>
-      <h3>{title}</h3>
+    <details className={styles.group}>
+      <summary className={styles.summary}>
+        <span>{title}</span>
+        <svg className={styles.chevron} viewBox="0 0 12 12" aria-hidden="true">
+          <path
+            d="M2.2 4.3 6 8l3.8-3.7"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </summary>
       <ul>
         {links.map((label) => {
           const to = pathForLabel(label);
@@ -24,7 +36,7 @@ function LinkGroup({ title, links }) {
           );
         })}
       </ul>
-    </>
+    </details>
   );
 }
 
@@ -102,7 +114,8 @@ export default function Footer({ columns, legalLinks }) {
 
         <div className={styles.myAppleWrapper}>
           More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
-          <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+          <a href="#">other retailer</a> near you. Or call{" "}
+          <a href="tel:1-800-692-7753">1-800-MY-APPLE</a> (1-800-692-7753).
         </div>
 
         <div className={`${styles.copyrightWrapper} row`}>
