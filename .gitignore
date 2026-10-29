@@ -10,15 +10,39 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.cache
 *.local
+*.tsbuildinfo
+
+# Secrets and credentials. Never commit these.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+credentials.json
+credentials.*.json
+secrets.json
+serviceAccount*.json
+*.secret
+
+# Hosting metadata created on your machine
+.vercel
+.vercel-env
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+Desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+

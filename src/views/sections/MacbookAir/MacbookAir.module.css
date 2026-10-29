@@ -1,0 +1,98 @@
+.black {
+  color: #1d1d1f;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.grey {
+  color: #86868b;
+}
+
+.band {
+  position: relative;
+  background-image: url("../../../assets/images/home/macbookair-new-sm.jpg");
+  height: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #fbfbfd;
+  text-align: center;
+  padding: 4rem 1.25rem 18rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.newAlert {
+  color: #bf4801;
+  font-size: 18px;
+}
+
+.titleWrapper {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+
+.titleWrapper.bold {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+
+.descriptionWrapper {
+  font-size: 26px;
+  padding: 10px 0;
+}
+
+.priceWrapper {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.linksWrapper {
+  padding: 15px 0;
+}
+
+.linksWrapper ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.linksWrapper ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.linksWrapper ul li a {
+  color: #06c;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.linksWrapper ul li a:hover {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .titleWrapper.bold {
+    font-size: 56px;
+  }
+
+  .band {
+    min-height: 692px;
+    padding: 65px 20px;
+    background-image: url("../../../assets/images/home/macbookair-new.jpg");
+    background-size: min(100%, 1100px) auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .descriptionWrapper {
+    font-size: 1.15rem;
+  }
+}

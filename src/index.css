@@ -1,21 +1,50 @@
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 a {
   color: #06c;
 }
+
 img {
   max-width: 100%;
+  height: auto;
 }
-.white {
-  color: #fff;
+
+@media (max-width: 575.98px) {
+  .ctaLinks ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 0.85rem;
+  }
+
+  .ctaLinks a {
+    font-size: 17px;
+  }
 }
-.black {
-  color: #1d1d1f;
+
+/* Clears the fixed header on a product page opened from the nav. */
+.productPage {
+  margin-top: 52px;
 }
-.grey {
-  color: #86868b;
-}
-.top-50 {
-  margin-top: 50px;
+
+/* Chevron used by shared call-to-action links. */
+.ctaLinks a::after {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  margin-left: 0.45em;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  vertical-align: 0.12em;
 }

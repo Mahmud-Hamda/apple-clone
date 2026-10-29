@@ -1,47 +1,40 @@
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
-// import "./App.css";
-// import Alert from "./components/AlertSection/AlertSection.jsx";
-// import Header from "./components/Header/Header.jsx";
-import {
-  AlertSection,
-  Footer,
-  Header,
-} from "./components/ComponentsBarrel.jsx";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import FooterController from "./controllers/FooterController.jsx";
+import HeaderController from "./controllers/HeaderController.jsx";
+import HomeController from "./controllers/HomeController.jsx";
+import SearchController from "./controllers/SearchController.jsx";
+import SectionController from "./controllers/SectionController.jsx";
 
-// import FirstSection from "./components/Sections/FirstSection.jsx";
-// import SecondSection from "./components/Sections/SecondSection.jsx";
-// import ThirdSection from "./components/Sections/ThirdSection.jsx";
-// import FourthSection from ".//components/Sections/FourthSection.jsx";
-// import FifthSection from "./components/Sections/FifthSection.jsx";
-// import SixthSection from "./components/Sections/SixthSection.jsx";
-// import Footer from "./components/Footer/Footer.jsx";
-import {
-  FifthSection,
-  FirstSection,
-  FourthSection,
-  SecondSection,
-  SixthSection,
-  ThirdSection,
-} from "./components/Sections/SectionsBarrel.jsx";
+/**
+ * Scrolls to the top when the route changes.
+ * @returns {null}
+ */
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-function App() {
-  // const [count, setCount] = useState(0)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  return (
-    <>
-      <Header />
-      <AlertSection />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
-      <SixthSection />
-      <Footer />
-    </>
-  );
+  return null;
 }
 
-export default App;
+/**
+ * Application routes. The header and footer stay mounted on every page.
+ * @returns {import("react").JSX.Element}
+ */
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <HeaderController />
+      <Routes>
+        <Route path="/" element={<HomeController />} />
+        <Route path="/search" element={<SearchController />} />
+        <Route path="/:section" element={<SectionController />} />
+      </Routes>
+      <FooterController />
+    </BrowserRouter>
+  );
+}
