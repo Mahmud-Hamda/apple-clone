@@ -37,9 +37,9 @@ export default function Header({
   }, [isSearchOpen]);
 
   return (
-    <header className={`${styles.navWrapper} fixed-top`}>
-      <div className="container">
-        <nav className="navbar navbar-expand-md" aria-label="Primary">
+    <header className={`${styles.navWrapper} fixed-top${isMenuOpen ? ` ${styles.menuOpen}` : ""}`}>
+          <div className="container">
+        <nav className="navbar navbar-expand-lg" aria-label="Primary">
           <button
             className={`navbar-toggler ${styles.navbarToggler}`}
             type="button"
